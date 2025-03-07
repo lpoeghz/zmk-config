@@ -63,7 +63,7 @@
 &kp Q                 &kp W        &kp E  &kp R  &kp T    &kp DE_Z  &mt DE_U_UMLAUT U  &kp I                   &mt DE_O_UMLAUT O  &kp P
 &mt DE_A_UMLAUT DE_A  &mt DE_SZ S  &kp D  &kp F  &kp G    &kp H     &kp J              &kp K                   &kp L              &mt DE_UNDERSCORE DE_MINUS
 &mt LEFT_SHIFT DE_Y   &kp X        &kp C  &kp V  &kp B    &kp N     &kp M              &mt DE_SEMICOLON COMMA  &mt DE_COLON DOT   &mt LSHFT RET
-&kp DE_J              &kp DE_C                                                                                 &kp SPACE          &mo 2
+&mo 1                 &kp ENTER                                                                                &kp SPACE          &mo 2
             >;
         };
 
