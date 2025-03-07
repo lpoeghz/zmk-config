@@ -60,19 +60,19 @@
 
         default_layer {
             bindings = <
-&kp Q                 &kp W        &kp E  &kp R  &kp T    &kp Z  &mt DE_O_UMLAUT O  &kp I      &mt DE_U_UMLAUT U  &kp P
-&mt DE_A_UMLAUT DE_A  &mt DE_SZ S  &kp D  &kp F  &kp G    &kp H  &kp J              &kp K      &kp L              &kp SQT
-&mt LEFT_SHIFT Y      &kp X        &kp C  &kp V  &kp B    &kp N  &kp M              &kp COMMA  &kp DOT            &mt LSHFT RET
-&mo 1                 &kp LCTRL                                                                &kp SPACE          &mo 2
+&kp Q                 &kp W        &kp E  &kp R  &kp T    &kp DE_Z  &mt DE_U_UMLAUT U  &kp I                   &mt DE_O_UMLAUT O  &kp P
+&mt DE_A_UMLAUT DE_A  &mt DE_SZ S  &kp D  &kp F  &kp G    &kp H     &kp J              &kp K                   &kp L              &mt DE_UNDERSCORE DE_MINUS
+&mt LEFT_SHIFT DE_Y   &kp X        &kp C  &kp V  &kp B    &kp N     &kp M              &mt DE_SEMICOLON COMMA  &mt DE_COLON DOT   &mt LSHFT RET
+&mo 1                 &kp LCTRL                                                                                &kp SPACE          &mo 2
             >;
         };
 
         left_layer {
             bindings = <
-&kp N1   &kp N2     &kp N3    &kp N4     &kp N5       &kp N6     &kp N7        &kp N8    &kp N9    &kp N0
-&kp TAB  &kp LC(S)  &kp DQT   &kp PIPE2  &kp HASH     &kp MINUS  &kp LS(LPAR)  &kp LBKT  &kp LBRC  &kp DEL
-&kp ESC  &kp TILDE  &kp FSLH  &kp BSLH   &kp GRAVE    &kp MINUS  &kp LS(RPAR)  &kp LBKT  &kp RBRC  &kp BSPC
-&mo 1    &kp LGUI                                                                        &kp RGUI  &mo 2
+&kp N1   &kp N2     &kp N3    &kp N4     &kp N5       &kp N6             &kp N7        &kp N8    &kp N9    &kp N0
+&kp TAB  &kp LC(S)  &kp DQT   &kp PIPE2  &kp HASH     &kp DE_MINUS       &kp LS(LPAR)  &kp LBKT  &kp LBRC  &kp DEL
+&kp ESC  &kp TILDE  &kp FSLH  &kp BSLH   &kp GRAVE    &kp DE_UNDERSCORE  &kp LS(RPAR)  &kp LBKT  &kp RBRC  &kp BSPC
+&mo 1    &kp LGUI                                                                                &kp RGUI  &mo 2
             >;
         };
 
