@@ -77,10 +77,10 @@
 
         right_layer {
             bindings = <
-&kp F1       &kp F2            &kp F3        &kp F4      &kp F5         &kp F6       &kp F7         &kp F8    &kp F9     &kp F10
-&kp F1       &kp K_PREV        &kp C_VOL_UP  &kp K_NEXT  &kp F11        &kp F12      &kp LEFT       &kp UP    &kp RIGHT  &kp END
-&kp LA(TAB)  &kp K_PLAY_PAUSE  &kp C_VOL_DN  &kp F12     &kp DE_EURO    &kp PAGE_UP  &kp PAGE_DOWN  &kp DOWN  &kp HOME   &kp RG(DE_L)
-&mo 1        &kp LCTRL                                                                                        &kp SPACE  &mo 2
+&kp F1          &kp F2            &kp F3        &kp F4      &kp F5         &kp F6       &kp F7         &kp F8    &kp F9     &kp F10
+&kp F1          &kp K_PREV        &kp C_VOL_UP  &kp K_NEXT  &kp F11        &kp F12      &kp LEFT       &kp UP    &kp RIGHT  &kp END
+&kp LA(TAB)     &kp K_PLAY_PAUSE  &kp C_VOL_DN  &kp F12     &kp DE_EURO    &kp PAGE_UP  &kp PAGE_DOWN  &kp DOWN  &kp HOME   &kp DELETE
+&kp LEFT_SHIFT  &kp LCTRL                                                                                        &kp SPACE  &mo 2
             >;
         };
     };
