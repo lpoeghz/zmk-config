@@ -6,7 +6,6 @@
 
 #include "keys_de.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
@@ -70,27 +69,18 @@
         left_layer {
             bindings = <
 &mt DE_EXCLAMATION DE_N1  &mt DE_DOUBLE_QUOTES DE_N2  &mt DE_SECTION DE_N3  &mt DE_DOLLAR DE_N4  &mt DE_PERCENT DE_N5     &mt DE_AMPERSAND DE_N6            &kp DE_N7                                     &kp DE_N8                             &kp DE_N9                         &mt DE_QUESTION DE_N0
-&mt DE_DEGREE DE_CARET    &kp DE_AT                   &kp K_LOCK            &kp DE_PIPE          &kp DE_TILDE             &mt DE_UNDERSCORE DE_MINUS        &mt DE_RIGHT_PARENTHESIS DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_LEFT_BRACKET  &mt DE_RIGHT_BRACE DE_LEFT_BRACE  &kp DEL
-&kp ESC                   &kp DE_TILDE                &kp K_COPY            &kp K_PASTE          &mt DE_GRAVE DE_ACUTE    &mt DE_GREATER_THAN DE_LESS_THAN  &mt DE_BACKSLASH DE_SLASH                     &mt DE_PLUS DE_ASTRK                  &mt DE_SQT DE_HASH                &kp BSPC
+&mt DE_DEGREE DE_CARET    &kp DE_AT                   &kp RG(DE_L)          &kp DE_PIPE          &kp DE_TILDE             &mt DE_UNDERSCORE DE_MINUS        &mt DE_RIGHT_PARENTHESIS DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_LEFT_BRACKET  &mt DE_RIGHT_BRACE DE_LEFT_BRACE  &kp DEL
+&kp ESC                   &kp LC(DE_X)                &kp LC(DE_C)          &kp LC(DE_V)         &mt DE_GRAVE DE_ACUTE    &mt DE_GREATER_THAN DE_LESS_THAN  &mt DE_BACKSLASH DE_SLASH                     &mt DE_PLUS DE_ASTRK                  &mt DE_SQT DE_HASH                &kp BSPC
 &mo 1                     &kp K_LOCK                                                                                                                                                                                                            &kp LGUI                          &mo 2
             >;
         };
 
         right_layer {
             bindings = <
-&kp F1     &kp F2            &kp F3        &kp F4      &kp F5         &kp F6     &kp F7         &kp F8    &kp F9     &kp F10
-&kp F1     &kp K_PREV        &kp C_VOL_UP  &kp K_NEXT  &kp F11        &kp F12    &kp LEFT       &kp UP    &kp RIGHT  &kp KP_NUMLOCK
-&kp LSHFT  &kp K_PLAY_PAUSE  &kp C_VOL_DN  &kp F12     &kp DE_EURO    &kp UNDER  &kp C_AC_HOME  &kp DOWN  &kp UP     &kp K_LOCK
-&mo 3      &kp LCTRL                                                                                      &kp SPACE  &mo 2
-            >;
-        };
-
-        tri_layer {
-            bindings = <
-&kp N1      &kp N2      &kp N3      &kp N4  &kp N5    &trans  &trans     &trans        &trans      &trans
-&kp F1      &kp F2      &kp F3      &kp F4  &kp F5    &trans  &kp PG_UP  &kp K_VOL_UP  &kp K_MUTE  &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &kp F6  &kp F7    &trans  &kp PG_DN  &kp K_VOL_DN  &trans      &trans
-&trans      &trans                                                                     &trans      &trans
+&kp F1       &kp F2            &kp F3        &kp F4      &kp F5         &kp F6       &kp F7         &kp F8    &kp F9     &kp F10
+&kp F1       &kp K_PREV        &kp C_VOL_UP  &kp K_NEXT  &kp F11        &kp F12      &kp LEFT       &kp UP    &kp RIGHT  &kp END
+&kp LA(TAB)  &kp K_PLAY_PAUSE  &kp C_VOL_DN  &kp F12     &kp DE_EURO    &kp PAGE_UP  &kp PAGE_DOWN  &kp DOWN  &kp HOME   &kp RG(DE_L)
+&mo 1        &kp LCTRL                                                                                        &kp SPACE  &mo 2
             >;
         };
     };
