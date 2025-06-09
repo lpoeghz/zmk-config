@@ -29,16 +29,16 @@
             bindings = <&kp TAB>;
         };
 
-        combo_ralt {
+        combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 16>;
-            bindings = <&kp RALT>;
+            bindings = <&kp RIGHT_GUI>;
         };
 
-        combo_lalt {
+        combo_lock {
             timeout-ms = <50>;
             key-positions = <11 12>;
-            bindings = <&kp LALT>;
+            bindings = <&kp LG(DE_L)>;
         };
 
         combo_lgui {
@@ -47,10 +47,15 @@
             bindings = <&kp LGUI>;
         };
 
-        combo_rgui {
+        combo_ralt {
             timeout-ms = <50>;
             key-positions = <17 18>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp RIGHT_ALT>;
+        };
+
+        QuestionMark {
+            bindings = <&kp DE_QMARK>;
+            key-positions = <8 9>;
         };
     };
 
@@ -59,28 +64,28 @@
 
         default_layer {
             bindings = <
-&mt DE_AT DE_Q        &kp W               &mt DE_EURO DE_E  &kp R  &kp T    &kp DE_Z  &mt DE_U_UMLAUT U  &kp I                   &mt DE_O_UMLAUT O   &kp P
-&mt DE_A_UMLAUT DE_A  &mt DE_SZ S         &kp D             &kp F  &kp G    &kp H     &kp J              &kp K                   &kp L               &mt DE_UNDERSCORE DE_MINUS
-&mt LEFT_SHIFT DE_Y   &kp X               &kp C             &kp V  &kp B    &kp N     &kp M              &mt DE_SEMICOLON COMMA  &mt DE_COLON DOT    &mt LSHFT RET
-&mo 1                 &mt LEFT_GUI SPACE                                                                                         &mt LEFT_GUI SPACE  &mo 2
+&mt DE_AT DE_Q        &kp W               &mt DE_EURO DE_E  &kp R  &kp T    &kp DE_Z  &mt DE_U_UMLAUT U  &kp I                   &mt DE_O_UMLAUT O  &kp P
+&mt DE_A_UMLAUT DE_A  &mt DE_SZ S         &kp D             &kp F  &kp G    &kp H     &kp J              &kp K                   &kp L              &mt DE_UNDERSCORE DE_MINUS
+&mt LEFT_SHIFT DE_Y   &kp X               &kp C             &kp V  &kp B    &kp N     &kp M              &mt DE_SEMICOLON COMMA  &mt DE_COLON DOT   &mt LSHFT RET
+&mo 1                 &mt LEFT_GUI SPACE                                                                                         &mt LCTRL SPACE    &mo 2
             >;
         };
 
         left_layer {
             bindings = <
-&mt DE_EXCLAMATION DE_N1  &mt DE_DOUBLE_QUOTES DE_N2  &mt DE_SECTION DE_N3  &mt DE_DOLLAR DE_N4  &mt DE_PERCENT DE_N5     &mt DE_AMPERSAND DE_N6            &kp DE_N7                                     &kp DE_N8                             &mt DE_EQUAL DE_N9                &mt DE_QUESTION DE_N0
-&mt DE_DEGREE DE_CARET    &kp DE_AT                   &kp RG(DE_L)          &kp DE_PIPE          &kp DE_TILDE             &mt DE_UNDERSCORE DE_MINUS        &mt DE_RIGHT_PARENTHESIS DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_LEFT_BRACKET  &mt DE_RIGHT_BRACE DE_LEFT_BRACE  &kp DEL
-&kp ESC                   &kp LC(DE_X)                &kp LC(DE_C)          &kp LC(DE_V)         &mt DE_GRAVE DE_ACUTE    &mt DE_GREATER_THAN DE_LESS_THAN  &mt DE_BACKSLASH DE_SLASH                     &mt DE_PLUS DE_ASTRK                  &mt DE_SQT DE_HASH                &kp BSPC
-&mo 1                     &kp K_LOCK                                                                                                                                                                                                            &kp LGUI                          &mo 2
+&kp N1              &kp N2         &kp N3          &kp N4        &kp N5                   &kp N6                            &kp N7                                        &kp N8                                &kp N9                            &kp N0
+&kp DE_EXCLAMATION  &kp DE_DQT     &kp DE_SECTION  &kp DE_DLLR   &kp DE_PRCNT             &kp DE_AMPS                       &mt DE_RIGHT_PARENTHESIS DE_LEFT_PARENTHESIS  &mt DE_RIGHT_BRACKET DE_LEFT_BRACKET  &mt DE_RIGHT_BRACE DE_LEFT_BRACE  &kp DE_EQUAL
+&kp CAPSLOCK        &kp LC(DE_X)   &kp LC(DE_C)    &kp LC(DE_V)  &mt DE_GRAVE DE_ACUTE    &mt DE_GREATER_THAN DE_LESS_THAN  &mt DE_BACKSLASH DE_SLASH                     &mt DE_PLUS DE_ASTRK                  &mt DE_SQT DE_HASH                &kp BSPC
+&kp DE_CARET        &kp DE_DEGREE                                                                                                                                                                               &kp DE_TILDE                      &kp DE_PIPE
             >;
         };
 
         right_layer {
             bindings = <
-&kp F1          &kp F2            &kp F3        &kp F4      &kp F5         &kp F6       &kp F7         &kp F8    &kp F9     &kp F10
-&kp F1          &kp K_PREV        &kp C_VOL_UP  &kp K_NEXT  &kp F11        &kp F12      &kp LEFT       &kp UP    &kp RIGHT  &kp END
-&kp LA(TAB)     &kp K_PLAY_PAUSE  &kp C_VOL_DN  &kp F12     &kp DE_EURO    &kp PAGE_UP  &kp PAGE_DOWN  &kp DOWN  &kp HOME   &kp DELETE
-&kp LEFT_SHIFT  &kp LCTRL                                                                                        &kp SPACE  &mo 2
+&kp F1          &kp F2        &kp F3      &kp F4         &kp F5               &kp F6         &kp F7         &kp F8         &kp F9         &kp F10
+&kp LG(LEFT)    &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)  &kp C_VOLUME_UP      &kp PG_UP      &kp HOME       &kp END        &kp DELETE     &kp F11
+&kp LEFT        &kp DOWN      &kp UP      &kp RIGHT      &kp C_VOLUME_DOWN    &kp PAGE_DOWN  &kp LG(DE_N1)  &kp LG(DE_N2)  &kp LG(DE_N3)  &kp F12
+&kp LEFT_SHIFT  &kp LCTRL                                                                                                  &kp LEFT_ALT   &kp INSERT
             >;
         };
     };
